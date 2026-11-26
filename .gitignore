@@ -1,0 +1,6 @@
+# Chave pessoal da API (nunca versionar)
+config.properties
+
+# Arquivos gerados
+target/
+nbactions.xml
