@@ -13,6 +13,19 @@
 
 </div>
 
+**Disciplina:** Sistemas Distribuídos – Prof. Udo Fritzke Jr.
+**Equipe:** Jules Eloisio Moraes de Lima, Kleberson Crystyan de Lima, Vitor Hugo Granato Moreira do Prado
+
+## Onde encontrar cada item da entrega
+
+| O que foi pedido | Onde está |
+|---|---|
+| **Cliente desktop** que acessa a API REST (chamadas GET) | Código em [`src/main/java/clientegeodb/`](src/main/java/clientegeodb) · chamadas GET em [`ClienteGeoDB.java`](src/main/java/clientegeodb/ClienteGeoDB.java) |
+| **Documento** (descrição da API, de cada chamada com URL, autenticação e exemplos JSON, e instruções de teste) | [`Documento/Documentacao.pdf`](Documento/Documentacao.pdf) |
+| **Projeto NetBeans** (repositório clonável) | **A raiz deste repositório** é o projeto NetBeans (Maven: [`pom.xml`](pom.xml) + [`src/`](src)). Veja [Como abrir no NetBeans](#como-abrir-no-netbeans) |
+| **Jar executável** (com instruções) | [`Jar_Executavel/ClienteGeoDB.jar`](Jar_Executavel/ClienteGeoDB.jar) · instruções em [`Jar_Executavel/LEIA-ME.txt`](Jar_Executavel/LEIA-ME.txt) |
+| **Pitch** (máx. 3 min) | _link informado na entrega pelo Canvas_ |
+
 ## O que ele faz
 
 Digite o início do nome de uma cidade, veja a lista de resultados e abra os detalhes de uma delas.
@@ -29,6 +42,8 @@ Digite o início do nome de uma cidade, veja a lista de resultados e abra os det
 - Conta no [RapidAPI](https://rapidapi.com) com a API **GeoDB Cities** assinada (plano gratuito)
 
 ## Como rodar
+
+### Como abrir no NetBeans
 
 **1. Clone o projeto**
 
@@ -50,7 +65,8 @@ chave.api=SUA_CHAVE
 **3. Execute**
 
 - **NetBeans:** *File → Open Project*, escolha a pasta e clique em *Run Project* (F6).
-- **Terminal:**
+- **Jar já compilado:** entre em [`Jar_Executavel/`](Jar_Executavel), crie o `config.properties` ali (copiando `config.exemplo.properties`) e execute `executar.bat` ou `java -jar ClienteGeoDB.jar`.
+- **Gerar o jar você mesmo:** no NetBeans, *Clean and Build*, ou no terminal:
 
   ```bash
   mvn clean package
@@ -76,4 +92,4 @@ chave.api=SUA_CHAVE
 
 ## Documentação
 
-URLs, autenticação e exemplos de JSON de cada chamada estão em [`Documentacao.pdf`](Documentacao.pdf).
+URLs, autenticação e exemplos de JSON de cada chamada estão em [`Documento/Documentacao.pdf`](Documento/Documentacao.pdf).

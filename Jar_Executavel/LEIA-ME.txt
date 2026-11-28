@@ -1,0 +1,12 @@
+JAR EXECUTAVEL - Busca de Cidades (cliente da API REST GeoDB Cities)
+
+Requisito: Java 17 ou superior.
+
+1. Copie "config.exemplo.properties" para "config.properties" (nesta mesma pasta).
+2. Abra o "config.properties" e coloque a chave do RapidAPI:  chave.api=SUA_CHAVE
+   (RapidAPI > My Apps > seu app > Security; precisa estar inscrito na API GeoDB Cities, plano gratuito)
+3. De duplo clique em "executar.bat" ou, no terminal, dentro desta pasta:
+       java -jar ClienteGeoDB.jar
+
+O "config.properties" precisa estar na mesma pasta de onde o jar e iniciado.
+Roteiro de teste: veja o README.md da raiz do repositorio (secao "Teste rapido").
